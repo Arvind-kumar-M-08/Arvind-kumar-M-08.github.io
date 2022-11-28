@@ -53,21 +53,21 @@ body{
     transition: all .5s;
 }
 
-nav ul li a:after,
-nav ul li a:before {
+.navbar ul li a:after,
+.navbar ul li a:before {
   transition: all .5s;
 }
 
 
 
-nav ul li a {
+.navbar ul li a {
     position:relative;
     z-index: 1;
 }
-nav ul li a:hover {
+.navbar ul li a:hover {
 color: black;
 }
-nav ul li a:after {
+.navbar ul li a:after {
 display: block;
 position: absolute;
 top: 0;
@@ -88,7 +88,7 @@ visibility: none;
 opacity: 0;
 z-index: -1;
 }
-nav ul li a:hover:after {
+.navbar ul li a:hover:after {
 opacity: 1;
 visibility: visible;
 height: 100%;
@@ -158,10 +158,32 @@ height: 100%;
         /* margin: 10% 5%; */
         margin: auto;
         grid-template-columns:auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-cont div h1,h2{
+        padding: auto;
+        text-align: center;
     }
     #header-title{
         font-size:2em;
     }
+    .header-subtitle{
+        font-size: 1em;
+    }
+
+    .social-links{
+        margin: 30px auto;
+        padding: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .social-links a{
+        margin: auto;
+        padding: auto;
+    }
+
     .bg::before {    
         content: "";
         background-image: none;
@@ -174,10 +196,35 @@ height: 100%;
         border: 0.5px solid #1fd13a;
     }
 
+    .navbar{
+        height: 6vh;
+        background-color: black;
+
+        margin: 0px;
+    }
+
+    .navbar ul li a{
+        padding: 5px;
+        background-color: #16a42b;
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        transition: all .5s;
+        border: 0.1px solid black;
+    }
+
     #navlist{
         list-style-type: none;
+        margin: 0;
+        padding-top: 2%;
+        padding-left: 0%;
+        /* padding-left: 4%; */
+        /* padding: 0px; */
         display: grid;
-        grid-template-columns: auto;
+        /* grid-template-columns: 200px 200px 200px 200px 200px 150px; */
+        grid-template-columns: auto auto auto auto auto auto;
+        /* justify-content: left; */
+        text-align: center;
     }
 
   }
