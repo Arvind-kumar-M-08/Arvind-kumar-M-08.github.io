@@ -1,0 +1,22 @@
+body{
+    background-color: black; 
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header{
+    margin: auto;
+}
+
+.header-cont{
+    margin: 15% 20%;
+}
+
+#header-title{
+    font-size:3em;
+}
+
+#sec-color{
+    color: #1fd13a;
+}
+
