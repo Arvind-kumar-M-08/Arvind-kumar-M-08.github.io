@@ -64,6 +64,7 @@ body{
 .navbar ul li a {
     position:relative;
     z-index: 1;
+    
 }
 .navbar ul li a:hover {
     color: black;   
@@ -84,7 +85,7 @@ body{
     /* background: #8846e3; */
     background: #16a42b;
     /* border-radius: 50%; */
-    border-radius: 1%;
+    border-radius: 2%;
     visibility: none;
     opacity: 0;
     z-index: -1;
@@ -99,6 +100,7 @@ body{
 #focussed{
     background: #16a42b;
     color: black;
+    border-radius: 2%;
 }
 
 
@@ -157,8 +159,86 @@ body{
     border: 1px solid #16a42b;
 }
 
+#resume{
+    margin: 20px 10%;
+    height: 86vh;
+    width: 80%;
+}
+
+
+.cardlist{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    padding: 20px;
+    margin: 0px 10vw;
+    height: auto;
+    width: 40vw;
+    border: 3px solid #107a20;
+    border-radius: 1%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: white;
+}
+
+.card-image{
+    height: auto;
+    width: 10vw;
+}
+
+
+
+.card-title{
+    /* color: white; */
+    color: black;
+    text-align: left;
+    font-size: x-large;
+}
+
+.card-subtitle{
+    color: gray;
+    text-align: left;
+    font-size: large;
+}
+
+#card-right{
+    align-self: flex-end;
+}
+
+#card-left{
+    align-self: flex-start;
+}
+ 
+.vertical-line {
+    border-left: 3px solid #107a20;
+    height: 30px;
+    left: 50%;
+    z-index: 10;
+}
+
+.circle {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    border: 2px solid;
+    /* position: relative; */
+    border-color: #107a20;
+  }
+
+
+
+
 /* Mobile css */
 @media only screen and (max-width: 1000px) {
+
+    /* home */
+
     #header{
         display: grid;
         grid-template-columns: auto;
@@ -207,7 +287,7 @@ body{
     }
 
     .navbar{
-        height: 6vh;
+        height: 6.5vh;
         background-color: #16a42b;
 
         margin: 0px;
@@ -236,11 +316,75 @@ body{
         /* justify-content: left; */
         justify-content: space-around;
         text-align: center;
+        overflow: hidden;
     }
 
     #focussed{
         background: #16a42b;
         color: black;
+        border-radius: 2%;
+    }
+
+    /* resume */
+
+    #resume{
+        margin: 10px 10%;
+        height: 70vh;
+        width: 80%;
+    }
+
+
+    /* Education */
+
+    .cardlist{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .card{
+        padding: 40px;
+        margin: 0px 5vw;
+        height: auto;
+        width: 70vw;
+        border: 3px solid #107a20;
+        border-radius: 1%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        background: white;
+        justify-content: left;
+        align-content: center;
+        align-items: center;
+
+    }
+    
+    .card-image{
+        height: auto;
+        width: 10vw;
+    }
+
+    #card-right{
+        align-self: center;
+    }
+    
+    #card-left{
+        align-self: center;
+    }
+
+    .card-title{
+        /* color: white; */
+        color: black;
+        text-align: left;
+        font-size: small;
+    }
+    
+    .card-subtitle{
+        color: gray;
+        text-align: left;
+        font-size: smaller;
     }
 
   }
