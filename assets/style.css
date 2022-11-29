@@ -10,10 +10,11 @@ body{
 
 .bg::before {    
     content: "";
-    background-image: url('bg.jpg');
+    background-image: none;
+    /* background-image: url('bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     position: absolute;
     top: 0px;
     right: 0px;
@@ -65,34 +66,43 @@ body{
     z-index: 1;
 }
 .navbar ul li a:hover {
-color: black;
+    color: black;   
 }
 .navbar ul li a:after {
-display: block;
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-margin: auto;
-width: 100%;
-height: 1px;
-content: '.';
-color: transparent;
-/* background: #F1C40F; */
-/* background: #8846e3; */
-background: #1fd13a;
-/* border-radius: 50%; */
-border-radius: 1%;
-visibility: none;
-opacity: 0;
-z-index: -1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    /* background: #F1C40F; */
+    /* background: #8846e3; */
+    background: #16a42b;
+    /* border-radius: 50%; */
+    border-radius: 1%;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
 }
 .navbar ul li a:hover:after {
-opacity: 1;
-visibility: visible;
-height: 100%;
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
 }
+
+
+#focussed{
+    background: #16a42b;
+    color: black;
+}
+
+
+
 
 
 
@@ -144,11 +154,11 @@ height: 100%;
     height: 35vh;
     /* width: 350px; */
     border-radius: 50%;
-    border: 0.5px solid #1fd13a;
+    border: 1px solid #16a42b;
 }
 
 /* Mobile css */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     #header{
         display: grid;
         grid-template-columns: auto;
@@ -193,12 +203,12 @@ height: 100%;
         height: 30vh;
         /* width: 350px; */
         border-radius: 50%;
-        border: 0.5px solid #1fd13a;
+        border: 0.5px solid #16a42b;
     }
 
     .navbar{
         height: 6vh;
-        background-color: black;
+        background-color: #16a42b;
 
         margin: 0px;
     }
@@ -210,7 +220,7 @@ height: 100%;
         color: white;
         font-size: 0.8em;
         transition: all .5s;
-        border: 0.1px solid black;
+        /* border: 0.1px solid black; */
     }
 
     #navlist{
@@ -224,7 +234,13 @@ height: 100%;
         /* grid-template-columns: 200px 200px 200px 200px 200px 150px; */
         grid-template-columns: auto auto auto auto auto auto;
         /* justify-content: left; */
+        justify-content: space-around;
         text-align: center;
+    }
+
+    #focussed{
+        background: #16a42b;
+        color: black;
     }
 
   }
