@@ -181,10 +181,13 @@ body{
     height: auto;
     width: 40vw;
     border: 3px solid #107a20;
-    border-radius: 1%;
+    border-radius: 1.5%;
     display: grid;
     grid-template-columns: 30% 70%;
     background: white;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
 }
 
 .card-image{
@@ -198,13 +201,29 @@ body{
     /* color: white; */
     color: black;
     text-align: left;
-    font-size: x-large;
+    font-size: larger;
 }
 
 .card-subtitle{
     color: gray;
     text-align: left;
     font-size: large;
+}
+
+.card-subsubtitle{
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    font-size: large;
+}
+
+.card-content{
+        color: black;
+}
+
+.card-content ul{
+    list-style: circle;
+    padding: 15px ;
 }
 
 #card-right{
@@ -226,7 +245,7 @@ body{
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    border: 2px solid;
+    border: 3px solid;
     /* position: relative; */
     border-color: #107a20;
   }
@@ -378,13 +397,25 @@ body{
         /* color: white; */
         color: black;
         text-align: left;
-        font-size: small;
+        font-size: smaller;
     }
     
     .card-subtitle{
         color: gray;
         text-align: left;
-        font-size: smaller;
+        font-size: x-small;
+    }
+
+    .card-subsubtitle{
+        color: black;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: left;
+        font-size: x-small;
+    }
+
+    .card-content ul li{
+        list-style: circle;
+        font-size: x-small;
     }
 
   }
