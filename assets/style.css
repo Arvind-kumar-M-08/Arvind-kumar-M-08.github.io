@@ -129,13 +129,14 @@ body{
 
 
 #sec-color{
-    color: #1fd13a; 
-    /* color: #7f40d6;  violet*/
+    color: #16a42b; 
+    /* color: #7f40d6;  */     
     /* color: #8846e3; */
     /* color:  #F1C40F; */
     /* color: #fcc603; */
     /* color: #fca503; */
-    color: #0c96f2;
+    /* color: #0c96f2; */
+    /* color: #a56afc; */
 }
 .social-links{
     margin: 30px auto;
@@ -310,21 +311,19 @@ body{
 /*------------------- Projects ---------------*/
 
 .project-cardlist{
-    margin: 40px 5vw;
+    margin: 40px 5vw 40px 0px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .project-container{
-    width: 56vw;
-    margin: 20px;
+    width: 66vw;
+    margin: 20px 20px 20px 0px;
 }
 
 .left-cont{
     display: grid;
-    grid-template-columns: 10vw 46vw;
+    grid-template-columns: 10vw 56vw;
     /* justify-content: center; */
     align-items: center;
     text-decoration: none;
@@ -332,7 +331,7 @@ body{
 
 .right-cont{
     display: grid;
-    grid-template-columns: 30vw 46vw;
+    grid-template-columns: 30vw 56vw;
     /* justify-content: center; */
     align-items: center;
     text-decoration: none;
@@ -348,7 +347,7 @@ body{
     padding: 20px;
     /* margin: 0px 10vw; */
     height: auto;
-    width: 40vw;
+    width: 50vw;
     border: 3px solid #107a20;
     border-radius: 1.5%;
     /* background: white; */
@@ -372,6 +371,47 @@ body{
     background-color: white;
 }
 
+.project-card-title{
+    color: black;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 1vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project-card-subtitle{
+    color: gray;
+    text-align: center;
+    font-size: medium;
+   
+}
+
+.project-card-subsubtitle{
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: large;
+}
+
+.project-card-content{
+        color: black;
+        margin: 1vh 1vw;
+}
+
+.project-card-content h4{
+    margin-bottom: 0px;
+}
+
+.project-card-content ul{
+    list-style: circle;
+    padding: 0.5vh 0.5vw;
+}
+
+.project-card-content ul li a{
+    text-decoration: none;
+    color: darkblue;
+}
 
 
 
@@ -565,7 +605,7 @@ body{
     /* Projects */
 
     .project-cardlist{
-        margin: 20px 2vw;
+        margin: 20px 0px;
         display: flex;
         flex-direction: column;
         /* justify-content: center;
@@ -573,14 +613,14 @@ body{
     }
     
     .project-container{
-        width: 76vw;
-        margin: 20px;
+        width: 85vw;
+        margin: 20px 20px 20px 0px;
     
     }
     
     .project-container a{
         display: grid;
-        grid-template-columns: 10vw 66vw;
+        grid-template-columns: 10vw 75vw;
         /* justify-content: center; */
         align-items: center;
         text-decoration: none;
@@ -596,7 +636,7 @@ body{
         padding: 20px;
         /* margin: 0px 10vw; */
         height: auto;
-        width: 60vw;
+        width: 70vw;
         border: 3px solid #107a20;
         border-radius: 1.5%;
         background: white;
