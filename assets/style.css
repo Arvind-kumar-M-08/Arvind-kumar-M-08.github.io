@@ -197,6 +197,7 @@ body{
     display: grid;
     grid-template-columns: 30% 70%;
     background: white;
+    /* background: rgb(210, 210, 210); */
     justify-content: left;
     align-content: center;
     align-items: center;
@@ -210,6 +211,7 @@ body{
 
 .card:hover{
     transform: scale(1.05);
+    /* background-color: white; */
     /* box-shadow: 8px 8px 15px -1px rgba(16,122,32,0.92);
     -webkit-box-shadow: 8px 8px 15px -1px rgba(16,122,32,0.92);
     -moz-box-shadow: 8px 8px 15px -1px rgba(16,122,32,0.92); */
@@ -266,6 +268,8 @@ body{
 }
 
 
+/* -------------   Design -------------- */
+
  
 .vertical-line {
     border-left: 3px solid #107a20;
@@ -287,11 +291,16 @@ body{
 .horizontal-line {
     border-top: 3px solid #107a20;
     width: 20vw;
-    /* top: 50%; */
     z-index: -10;
 }
 
-/* Projects */
+.horizontal-line-long {
+    border-top: 3px solid #107a20;
+    width: 50vw;
+    z-index: -10;
+}
+
+/*------------------- Projects ---------------*/
 
 .project-cardlist{
     margin: 40px 5vw;
@@ -304,12 +313,19 @@ body{
 .project-container{
     width: 56vw;
     margin: 20px;
-
 }
 
-.project-container a{
+.left-cont{
     display: grid;
     grid-template-columns: 10vw 46vw;
+    /* justify-content: center; */
+    align-items: center;
+    text-decoration: none;
+}
+
+.right-cont{
+    display: grid;
+    grid-template-columns: 30vw 46vw;
     /* justify-content: center; */
     align-items: center;
     text-decoration: none;
@@ -328,7 +344,8 @@ body{
     width: 40vw;
     border: 3px solid #107a20;
     border-radius: 1.5%;
-    background: white;
+    /* background: white; */
+    background: rgb(210, 210, 210);
     align-content: center;
     align-items: center;
     transition: transform 0.5s;
@@ -338,19 +355,21 @@ body{
     border-right: 2vw solid #16a42b;
 }
 
-.project-card:hover{
-    transform: scale(1.15);
+.left-cont:hover > .project-card{
     transform: translateX(10vw);
-    /* box-shadow: 8px 8px 15px -1px rgba(16,122,32,0.92);
-    -webkit-box-shadow: 8px 8px 15px -1px rgba(16,122,32,0.92);
-    -moz-box-shadow: 8px 8px 15px -1px rgba(16,122,32,0.92); */
+    background-color: white;
+}
+
+.right-cont:hover > .project-card{
+    transform: translateX(-10vw);
+    background-color: white;
 }
 
 
 
 
 /* Mobile css */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) {
 
     /* home */
 
@@ -578,8 +597,24 @@ body{
         border-right: 2vw solid #16a42b;
     }
     
-    .project-card:hover{
-        transform: none;
+    .left-cont:hover > .project-card{
+        transform: translateX(5vw);
+    }
+    
+    .right-cont:hover > .project-card{
+        transform: translateX(5vw);
     }
 
+  }
+
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
   }
