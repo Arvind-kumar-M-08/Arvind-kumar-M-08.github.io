@@ -23,14 +23,18 @@ body{
     opacity: 0.3;
 }
 #header{
-    margin: auto;
-    position: relative;
+    margin: 0px auto 10px auto;
+    position: sticky;
+    top: 0%;
+    background-color: black;
+    z-index: 101;
 }
 
 .navbar{
-    height: 8vh;
+    height: 10vh;
     /* background-color: black; */
     /* border-bottom: 2px solid #7f40d6; */
+    top: 0%;
     margin: 0px;
 }
 #navlist{
@@ -129,6 +133,9 @@ body{
     /* color: #7f40d6;  violet*/
     /* color: #8846e3; */
     /* color:  #F1C40F; */
+    /* color: #fcc603; */
+    /* color: #fca503; */
+    color: #0c96f2;
 }
 .social-links{
     margin: 30px auto;
@@ -390,6 +397,7 @@ body{
         text-align: center;
     }
     #header-title{
+            margin: 1.5vh;
         font-size:2em;
     }
     .header-subtitle{
@@ -409,9 +417,9 @@ body{
     }
 
     .header-resume{
-        font-size: small;
+        font-size: medium;
         text-align: center;
-        margin: 15px;
+        margin: 2vh;
     }
     
 
@@ -420,8 +428,12 @@ body{
         background-image: none;
     }
 
+    .photo-cont{
+        margin: 3vh auto;
+    }
+
     .photo{
-        height: 30vh;
+        height: 25vh;
         /* width: 350px; */
         border-radius: 50%;
         border: 0.5px solid #16a42b;
@@ -608,13 +620,4 @@ body{
   }
 
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
   
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
