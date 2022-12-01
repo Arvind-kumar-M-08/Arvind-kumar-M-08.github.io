@@ -309,7 +309,13 @@ body{
 
 .horizontal-line-long {
     border-top: 3px solid #107a20;
-    width: 50vw;
+    width: 30vw;
+    z-index: -10;
+}
+
+.horizontal-line-long2 {
+    border-top: 3px solid #107a20;
+    width: 40vw;
     z-index: -10;
 }
 
@@ -414,6 +420,96 @@ body{
 }
 
 .project-card-content ul li a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+
+
+/* Achievements */
+
+.award-container{
+    width: 76vw;
+    margin: 20px 20px 20px 0px;
+    display: grid;
+    grid-template-columns: 10vw 66vw;
+    /* justify-content: center; */
+    align-items: center;
+    text-decoration: none;
+}
+
+.award-container2{
+    width: 86vw;
+    margin: 20px 20px 20px 0px;
+    display: grid;
+    grid-template-columns: 20vw 66vw;
+    /* justify-content: center; */
+    align-items: center;
+    text-decoration: none;
+}
+
+.award-container3{
+    width: 96vw;
+    margin: 20px 20px 20px 0px;
+    display: grid;
+    grid-template-columns: 30vw 66vw;
+    /* justify-content: center; */
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.award-card{
+    height: auto;
+    width: 60vw;
+    border: 3px solid #107a20;
+    border-radius: 1.5%;
+    /* background: white; */
+    background: rgb(210, 210, 210);
+    align-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    border-top: 1.5vw solid transparent;
+    border-bottom: 1.5vw solid transparent;
+    /* border-left: 1.5vw solid #16a42b; */
+    border-right: 1.5vw solid #16a42b;
+}
+.award-card:hover{
+    transform: scale(1.05);
+}
+
+.award-container:hover > .award-card{
+    /* transform: translateX(10vw); */
+    background-color: white;
+}
+.award-container2:hover > .award-card{
+    /* transform: translateX(10vw); */
+    background-color: white;
+}
+.award-container3:hover > .award-card{
+    /* transform: translateX(10vw); */
+    background-color: white;
+}
+
+.award-card-content{
+        color: black;
+        margin: 0.5vh 1vw;
+        display: grid;
+        grid-template-columns: 5% 95%;
+        /* justify-content: center; */
+        align-items: center;
+}
+
+.award-emoji{
+    font-size: large;
+}
+
+.award-card-content ul{
+    list-style: circle;
+    padding: 0.5vh 0.5vw;
+}
+
+.award-card-content ul li a{
     text-decoration: none;
     color: darkblue;
 }
@@ -662,6 +758,65 @@ body{
         transform: translateX(5vw);
     }
 
+    .project-card-title{
+        /* color: white; */
+        color: black;
+        font-size: smaller;
+    }
+
+    .project-card-subtitle{
+        color: gray;
+        font-size: x-small;
+    }
+
+    .project-card-content h4{
+        font-size: smaller;
+    }
+
+    .project-card-content p{
+        font-size: x-small;
+    }
+
+    .project-card-content ul li{
+        font-size: x-small;
+    }
+
+
+    /* Achievements */
+
+
+    .award-card{
+        height: auto;
+        width: 60vw;
+        border: 3px solid #107a20;
+        border-radius: 1.5%;
+        background: white;
+        align-content: center;
+        align-items: center;
+        /* transition: transform 0.5s; */
+        border-top: 1.5vw solid transparent;
+        border-bottom: 1.5vw solid transparent;
+        /* border-left: 1.5vw solid #16a42b; */
+        border-right: 1.5vw solid #16a42b;
+    }
+
+
+    .award-card-content{
+        color: black;
+        margin: 0.5vh 1vw;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        /* justify-content: center; */
+        align-items: center;
+}
+
+    .award-emoji{
+        font-size: x-small;
+        /* padding: auto 1vw; */
+    }
+    .award-card-content ul li{
+        font-size: x-small;
+    }
   }
 
 
