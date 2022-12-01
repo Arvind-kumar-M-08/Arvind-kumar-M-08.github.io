@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link href="assets/style.css" rel="stylesheet">
+        <script src="https://unpkg.com/scrollreveal"></script>
         <title>Projects</title>
     </head>
     <body>
@@ -189,11 +190,19 @@
 
 
 
-
-
-
             </div>
 
+            <script>
+                ScrollReveal({ reset: true });
+
+                ScrollReveal().reveal(".project-container", {
+                duration: 1000,
+                origin: "left",
+                distance: "500px",
+                easing: "ease-in-out"
+                });
+
+            </script>
             
             
     </body>
