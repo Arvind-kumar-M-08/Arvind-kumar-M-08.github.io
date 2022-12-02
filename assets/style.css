@@ -517,14 +517,16 @@ body{
 
 
 /* Mobile css */
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1150px) {
 
     /* home */
 
     #header{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
+        margin: 0px auto 10px auto;
+        position: sticky;
+        top: 0%;
+        background-color: #16a42b;
+        z-index: 101;        
     }
     .header-cont{
         /* margin: 10% 5%; */
@@ -583,17 +585,18 @@ body{
     .navbar{
         height: 6.5vh;
         background-color: #16a42b;
-        margin: 0px;
     }
 
     .navbar ul li a{
         padding: 5px;
+        margin: auto;
         background-color: #16a42b;
         text-decoration: none;
         color: white;
         font-size: 0.8em;
         transition: all .5s;
         /* border: 0.1px solid black; */
+        overflow: hidden;
     }
 
     #navlist{
@@ -607,7 +610,7 @@ body{
         /* grid-template-columns: 200px 200px 200px 200px 200px 150px; */
         grid-template-columns: auto auto auto auto auto auto;
         /* justify-content: left; */
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
         overflow: hidden;
     }
