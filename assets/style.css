@@ -31,26 +31,27 @@ body{
 }
 
 .navbar{
-    height: 10vh;
-    /* background-color: black; */
-    /* border-bottom: 2px solid #7f40d6; */
+    height: 12vh;
+    background-color: black;
     top: 0%;
     margin: 0px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: left;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
+
 #navlist{
-    list-style-type: none;
-    margin: 0;
-    padding-top: 2%;
-    /* padding-left: 4%; */
     padding: auto;
     display: grid;
-    /* grid-template-columns: 200px 200px 200px 200px 200px 150px; */
     grid-template-columns: auto auto auto auto auto auto;
-    justify-content: left;
+    justify-content: space-around;
     text-align: center;
 }
 
-.navbar ul li a{
+#navlist a{
     padding: 15px 40px;
     text-decoration: none;
     color: white;
@@ -58,22 +59,22 @@ body{
     transition: all .5s;
 }
 
-.navbar ul li a:after,
-.navbar ul li a:before {
+#navlist a:after,
+#navlist a:before {
   transition: all .5s;
 }
 
 
 
-.navbar ul li a {
+#navlist a {
     position:relative;
     z-index: 1;
     
 }
-.navbar ul li a:hover {
+#navlist a:hover {
     color: black;   
 }
-.navbar ul li a:after {
+#navlist a:after {
     display: block;
     position: absolute;
     top: 0;
@@ -94,7 +95,7 @@ body{
     opacity: 0;
     z-index: -1;
 }
-.navbar ul li a:hover:after {
+#navlist a:hover:after {
     opacity: 1;
     visibility: visible;
     height: 100%;
@@ -515,14 +516,41 @@ body{
 }
 
 
+/* Skills */
 
-/* Mobile css */
-@media only screen and (max-width: 1150px) {
+
+.skill-container{
+    width: 60vw;
+    margin: 5vh 20vw;
+    /* height: 50vh; */
+    /* background-color: white; */
+    background-color: whitesmoke;
+    border: 1vw solid #16a42b;
+    border-top: 1vw solid transparent;
+    border-bottom: 1vw solid transparent;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+.skill-image-cont{
+    margin: 2vw;
+    height: auto;
+    width: 10vw;
+}
+
+.skill-image{
+    height: 8vw;
+    width: 8vw;
+    object-fit: cover;
+}
+
+/* Tablet css */
+@media only screen and (max-width: 1150px) and (min-width:400px) {
 
     /* home */
 
     #header{
-        margin: 0px auto 10px auto;
         position: sticky;
         top: 0%;
         background-color: #16a42b;
@@ -534,6 +562,7 @@ body{
         grid-template-columns:auto;
         align-items: center;
         justify-content: center;
+        background-color: black;
     }
     .header-cont div h1,h2{
         padding: auto;
@@ -583,35 +612,37 @@ body{
     }
 
     .navbar{
-        height: 6.5vh;
+        height: 8vh;
         background-color: #16a42b;
+        top: 0%;
+        margin: 0px;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
     }
 
-    .navbar ul li a{
-        padding: 5px;
+    #navlist a{
         margin: auto;
-        background-color: #16a42b;
         text-decoration: none;
         color: white;
         font-size: 0.8em;
         transition: all .5s;
-        /* border: 0.1px solid black; */
         overflow: hidden;
     }
 
     #navlist{
-        list-style-type: none;
-        margin: 0;
-        padding-top: 2%;
-        padding-left: 0%;
-        /* padding-left: 4%; */
-        /* padding: 0px; */
+        padding: auto;
         display: grid;
-        /* grid-template-columns: 200px 200px 200px 200px 200px 150px; */
         grid-template-columns: auto auto auto auto auto auto;
-        /* justify-content: left; */
-        justify-content: center;
+        justify-content: space-around;
         text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
         overflow: hidden;
     }
 
@@ -819,6 +850,379 @@ body{
     }
     .award-card-content ul li{
         font-size: x-small;
+    }
+
+    /* Skills */
+
+
+    .skill-container{
+        width: 60vw;
+        margin: 10vh 20vw;
+        /* height: 50vh; */
+        /* background-color: white; */
+        background-color: whitesmoke;
+        border: 1vw solid #16a42b;
+        border-top: 1vw solid transparent;
+        border-bottom: 1vw solid transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+    .skill-image-cont{
+        margin: 2vw;
+        height: auto;
+        width: 10vw;
+    }
+
+    .skill-image{
+        height: 8vw;
+        width: 8vw;
+        object-fit: cover;
+    }
+
+  }
+
+
+
+
+
+
+/* Mobile css */
+  @media only screen and (max-width: 400px) {
+
+    /* home */
+
+    #header{
+        margin: 0px auto 10px auto;
+        position: sticky;
+        top: 0%;
+        background-color: #16a42b;
+        z-index: 101;        
+    }
+    .header-cont{
+        /* margin: 10% 5%; */
+        margin: auto;
+        grid-template-columns:auto;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .header-cont div h1,h2{
+        padding: auto;
+        text-align: center;
+    }
+    #header-title{
+            margin: 1.5vh;
+        font-size:2em;
+    }
+    .header-subtitle{
+        font-size: 1em;
+    }
+
+    .social-links{
+        margin: 30px auto 0px auto ;
+        padding: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .social-links a{
+        margin: auto;
+        padding: auto;
+    }
+
+    .header-resume{
+        font-size: medium;
+        text-align: center;
+        margin: 2vh;
+    }
+    
+
+    .bg::before {    
+        content: "";
+        background-image: none;
+    }
+
+    .photo-cont{
+        margin: 3vh auto;
+    }
+
+    .photo{
+        height: 25vh;
+        /* width: 350px; */
+        border-radius: 50%;
+        border: 0.5px solid #16a42b;
+    }
+
+    .navbar{
+        top: 0%;
+        height: 6.5vh;
+        background-color: #16a42b;
+        margin: 0px;
+        display: grid;
+        width: 100vw;
+        grid-template-columns: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    #navlist a{
+        padding: 5px;
+        margin: auto;
+        text-decoration: none;
+        color: white;
+        font-size: 0.5em;
+        transition: all .5s;
+        overflow: hidden;
+    }
+
+    #navlist{
+        padding: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        overflow: hidden;
+    }
+
+
+    #focussed{
+        background: #16a42b;
+        color: black;
+        border-radius: 2%;
+    }
+
+    /* resume */
+
+    #resume{
+        margin: 10px 10%;
+        height: 70vh;
+        width: 80%;
+    }
+
+
+    /* Education */
+
+    .cardlist{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .card{
+        padding: 10px;
+        margin: 0px 5vw;
+        height: auto;
+        width: 70vw;
+        border: 3px solid #107a20;
+        border-radius: 1%;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        background: white;
+        justify-content: left;
+        align-content: center;
+        align-items: center;
+
+
+        border-top: 2vw solid transparent;
+        border-bottom: 2vw solid transparent;
+        border-left: 2vw solid #16a42b;
+        border-right: 2vw solid #16a42b;
+
+    }
+    
+    .card-image{
+        height: auto;
+        width: 10vw;
+    }
+
+    #card-right{
+        align-self: center;
+    }
+    
+    #card-left{
+        align-self: center;
+    }
+
+    .card-title{
+        /* color: white; */
+        color: black;
+        text-align: left;
+        font-size: smaller;
+    }
+    
+    .card-subtitle{
+        color: gray;
+        text-align: left;
+        font-size: x-small;
+    }
+
+    .card-subsubtitle{
+        color: black;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: left;
+        font-size: x-small;
+    }
+
+    .card-content ul{
+        list-style: circle;
+        padding: 5px 5px 0px 5px ;
+    }
+
+    .card-content ul li{
+        list-style: circle;
+        font-size: x-small;
+    }
+
+    /* Projects */
+
+    .project-cardlist{
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    
+    .project-container{
+        width: 85vw;
+        margin: 20px 20px 20px 0px;
+    
+    }
+    
+    .project-container a{
+        display: grid;
+        grid-template-columns: 10vw 75vw;
+        /* justify-content: center; */
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .project-design{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+    
+    .project-card{
+        padding: 20px;
+        /* margin: 0px 10vw; */
+        height: auto;
+        width: 70vw;
+        border: 3px solid #107a20;
+        border-radius: 1.5%;
+        background: white;
+        align-content: center;
+        align-items: center;
+        transition: transform 0.5s;
+        border-top: 2vw solid transparent;
+        border-bottom: 2vw solid transparent;
+        border-left: 2vw solid #16a42b;
+        border-right: 2vw solid #16a42b;
+    }
+    
+    .left-cont:hover > .project-card{
+        transform: translateX(5vw);
+    }
+    
+    .right-cont:hover > .project-card{
+        transform: translateX(5vw);
+    }
+
+    .project-card-title{
+        /* color: white; */
+        color: black;
+        font-size: smaller;
+    }
+
+    .project-card-subtitle{
+        color: gray;
+        font-size: x-small;
+    }
+
+    .project-card-content h4{
+        font-size: smaller;
+    }
+
+    .project-card-content p{
+        font-size: x-small;
+    }
+
+    .project-card-content ul li{
+        font-size: x-small;
+    }
+
+
+    /* Achievements */
+
+
+    .award-card{
+        height: auto;
+        width: 60vw;
+        border: 3px solid #107a20;
+        border-radius: 1.5%;
+        background: white;
+        align-content: center;
+        align-items: center;
+        /* transition: transform 0.5s; */
+        border-top: 1.5vw solid transparent;
+        border-bottom: 1.5vw solid transparent;
+        /* border-left: 1.5vw solid #16a42b; */
+        border-right: 1.5vw solid #16a42b;
+    }
+
+
+    .award-card-content{
+        color: black;
+        margin: 0.5vh 1vw;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        /* justify-content: center; */
+        align-items: center;
+}
+
+    .award-emoji{
+        font-size: x-small;
+        /* padding: auto 1vw; */
+    }
+    .award-card-content ul li{
+        font-size: x-small;
+    }
+
+    .skill-container{
+        width: 60vw;
+        margin: 10vh 20vw;
+        /* height: 50vh; */
+        /* background-color: white; */
+        background-color: whitesmoke;
+        border: 1vw solid #16a42b;
+        border-top: 1vw solid transparent;
+        border-bottom: 1vw solid transparent;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+
+    .skill-image-cont{
+        margin: 2vw;
+        height: auto;
+        width: 10vw;
+    }
+
+    .skill-image{
+        height: 8vw;
+        width: 8vw;
+        object-fit: cover;
     }
   }
 

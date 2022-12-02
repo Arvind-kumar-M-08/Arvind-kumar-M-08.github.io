@@ -4,22 +4,64 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <link href="assets/style.css" rel="stylesheet">
+        <script src="assets/script.js"></script>
         <title>Skills</title>
     </head>
     <body>
         <header id="header">
             <div class="navbar">
-                <ul id="navlist">
-                    <li><a href="index.html" >Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="experience.html">Experience</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    
-                    <li><a href="achievement.html" >Achievement</a></li>
-                    <li><a href="skills.html" id="focussed">Skills</a></li>
-                </ul>
+                <div id="navlist">
+                    <a href="index.html" >Home</a>
+                    <a href="education.html">Education</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="projects.html" >Projects</a>  
+                    <a href="achievement.html">Achievement</a>
+                    <a href=""  id="focussed">Skills</a>
+                </div>
             </div>
         </header>   
-        <!-- <iframe src="./assets/Arvind_Kumar_M_IIT_Dharwad.pdf#toolbar=0&view=FitH" id="resume"></iframe> -->            
-</body>
+
+
+        <div class="skill-container">
+            <div class="skill-image-cont"><img src="assets/skills/cpp.png" class="skill-image" id="img1"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/python.png" class="skill-image" id="img2"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/java.png" class="skill-image" id="img3"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/mysql.png" class="skill-image" id="img4"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/react.png" class="skill-image" id="img1"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/ros.png" class="skill-image" id="img2"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/html.png" class="skill-image" id="img3"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/css.png" class="skill-image" id="img4"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/git.png" class="skill-image" id="img1"/></div>
+            <div class="skill-image-cont"><img src="assets/skills/flutter.png" class="skill-image" id="img2"/></div>
+        </div>
+
+        
+
+
+        <script>
+            ScrollReveal({ reset: true });
+
+            ScrollReveal().reveal("#img1", {
+            duration: 1000,
+            move: 0
+            });
+            ScrollReveal().reveal("#img2", {
+            duration: 2000,
+            move: 0
+            });
+            ScrollReveal().reveal("#img3", {
+            duration: 3000,
+            move: 0
+            });
+            ScrollReveal().reveal("#img4", {
+            duration: 4000,
+            move: 0
+            });
+
+            
+
+        </script>
+
+
+    </body>
 </html>
