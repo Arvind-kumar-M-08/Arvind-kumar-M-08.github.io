@@ -1,3 +1,7 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
 body{
     background-color: black; 
     /* background-image: url('bg.jpg');
@@ -23,16 +27,18 @@ body{
     opacity: 0.3;
 }
 #header{
-    margin: 0px auto 10px auto;
+    /* margin: 0px auto 10px auto; */
     position: sticky;
     top: 0%;
-    background-color: black;
+    /* background-color: black; */
+    background-color:  rgb(40, 40, 40);
     z-index: 101;
 }
 
 .navbar{
-    height: 12vh;
-    background-color: black;
+    height: 10vh;
+    /* background-color: black; */
+    background-color:  rgb(40, 40, 40);
     top: 0%;
     margin: 0px;
     display: grid;
@@ -52,7 +58,8 @@ body{
 }
 
 #navlist a{
-    padding: 15px 40px;
+    margin: 0.5vw;
+    padding: 2vh 2vw;
     text-decoration: none;
     color: white;
     font-size: 1.4em;
@@ -102,11 +109,6 @@ body{
 }
 
 
-#focussed{
-    background: #16a42b;
-    color: black;
-    border-radius: 2%;
-}
 
 
 
@@ -545,6 +547,50 @@ body{
     object-fit: cover;
 }
 
+/* Footer */
+
+.pre-footer{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+}
+
+.footer-cont{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 10vh;
+    height: 8vh;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(40, 40, 40);
+}
+
+.footer-link{
+    width: 20vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer-logo{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    /* padding: 2vh 2.5vw; */
+}
+
+
+
+
 /* Tablet css */
 @media only screen and (max-width: 1150px) and (min-width:400px) {
 
@@ -646,11 +692,7 @@ body{
         overflow: hidden;
     }
 
-    #focussed{
-        background: #16a42b;
-        color: black;
-        border-radius: 2%;
-    }
+
 
     /* resume */
 
@@ -881,6 +923,46 @@ body{
         object-fit: cover;
     }
 
+
+    /* Footer */
+    .pre-footer{
+        height: 8vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .footer-cont{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-top: 10vh;
+        height: 6vh;
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        background-color: rgb(40, 40, 40);
+    }
+
+    .footer-link{
+        width: 30vw;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    .footer-logo{
+        height: 3vh;
+        width: 3vh;
+        border-radius: 50%;
+        /* padding: 2vh 2.5vw; */
+    }
   }
 
 
@@ -894,9 +976,9 @@ body{
     /* home */
 
     #header{
-        margin: 0px auto 10px auto;
-        position: sticky;
         top: 0%;
+        position: sticky;
+        
         background-color: #16a42b;
         z-index: 101;        
     }
@@ -993,11 +1075,6 @@ body{
     }
 
 
-    #focussed{
-        background: #16a42b;
-        color: black;
-        border-radius: 2%;
-    }
 
     /* resume */
 
@@ -1223,6 +1300,47 @@ body{
         height: 8vw;
         width: 8vw;
         object-fit: cover;
+    }
+
+    /* Footer */
+
+    .pre-footer{
+        height: 7vh;
+        width: 100%;
+        background-color: black;
+    }
+    
+    .footer-cont{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-top: 10vh;
+        height: 5vh;
+        width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        background-color: rgb(40, 40, 40);
+    }
+
+    .footer-link{
+        width: 30vw;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    .footer-logo{
+        height: 2.5vh;
+        width: 2.5vh;
+        border-radius: 50%;
+        /* padding: 2vh 2.5vw; */
     }
   }
 
