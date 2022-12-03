@@ -585,9 +585,13 @@ body{
     height: 5vh;
     width: 5vh;
     border-radius: 50%;
+    background-color: gray;
     /* padding: 2vh 2.5vw; */
 }
 
+.footer-logo:hover{
+    background-color: rgb(211, 211, 211);
+}
 
 
 
@@ -961,6 +965,7 @@ body{
         height: 3vh;
         width: 3vh;
         border-radius: 50%;
+        background-color: rgb(211, 211, 211);
         /* padding: 2vh 2.5vw; */
     }
   }
@@ -1340,6 +1345,7 @@ body{
         height: 2.5vh;
         width: 2.5vh;
         border-radius: 50%;
+        background-color: rgb(211, 211, 211);
         /* padding: 2vh 2.5vw; */
     }
   }
